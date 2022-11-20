@@ -4,7 +4,8 @@ export const SecondApp = ( { title, subtitle, name }) => {
     
     return (
         <>
-            <h1>{ title }</h1>
+            <h1 data-testid="test-title">{ title }</h1>
+            <p>{ subtitle }</p>
             <p>{ subtitle }</p>
             <p>{ name }</p>
         </>
@@ -17,7 +18,7 @@ SecondApp.propTypes = {
 }
 
 SecondApp.defaultProps = {
-    title: 'No hay ningún título',
+    name: 'Nachowski',
     subtitle: 'No hay subtítulo',
-    name: 'Nachowski'
+    //title: 'No hay ningún título',
 }
